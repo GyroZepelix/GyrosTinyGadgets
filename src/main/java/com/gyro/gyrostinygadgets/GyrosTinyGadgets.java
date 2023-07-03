@@ -1,5 +1,6 @@
 package com.gyro.gyrostinygadgets;
 
+import com.gyro.gyrostinygadgets.item.ModItemProperties;
 import com.gyro.gyrostinygadgets.item.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.level.block.Block;
@@ -10,6 +11,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.InterModComms;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModProcessEvent;
@@ -36,10 +38,13 @@ public class GyrosTinyGadgets
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
+
+        modEventBus.addListener(this::clientSetup);
     }
 
-    private void setup(final FMLCommonSetupEvent event)
+    private void clientSetup(final FMLClientSetupEvent event)
     {
+        ModItemProperties.addCustomItemProperties();
     }
 
 }

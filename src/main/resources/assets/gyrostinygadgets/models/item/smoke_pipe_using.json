@@ -1,17 +1,9 @@
 {
-	"credit": "Made with Blockbench",
+	"parent": "gyrostinygadgets:item/smoke_pipe",
 	"textures": {
-		"0": "gyrostinygadgets:item/smoke_pipe",
-		"particle": "gyrostinygadgets:item/smoke_pipe"
+		"0": "gyrostinygadgets:item/smoke_pipe_lit",
+		"particle": "gyrostinygadgets:item/smoke_pipe_lit"
 	},
-	"overrides": [
-		{
-			"predicate": {
-				"minecraft:using_lit": 1
-			},
-			"model": "gyrostinygadgets:item/smoke_pipe_using"
-		}
-	],
 	"elements": [
 		{
 			"from": [4, 0, 6.475],

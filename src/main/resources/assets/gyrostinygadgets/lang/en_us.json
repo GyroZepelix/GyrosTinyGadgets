@@ -1,5 +1,10 @@
 {
   "item.gyrostinygadgets.small_hammer": "Small Hammer",
   "item.gyrostinygadgets.hammer": "Hammer",
+  "item.gyrostinygadgets.cigar": "Cigar",
+  "item.gyrostinygadgets.smoke_pipe": "Smoke Pipe",
+  "item.gyrostinygadgets.copper_wrench": "Copper Wrench",
+  "item.gyrostinygadgets.dried_cactus": "Dried Cactus",
+
   "itemGroup.gadgets_tab": "Gyro's Tiny Gadgets"
 }

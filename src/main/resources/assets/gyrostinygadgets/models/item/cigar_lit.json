@@ -1,0 +1,70 @@
+{
+	"parent": "gyrostinygadgets:item/cigar",
+	"textures": {
+		"0": "gyrostinygadgets:item/lit_cigar",
+		"particle": "gyrostinygadgets:item/lit_cigar"
+	},
+	"elements": [
+		{
+			"from": [4.5, 7, 7],
+			"to": [11.5, 9, 9],
+			"rotation": {"angle": 0, "axis": "y", "origin": [10.5, 1, 8]},
+			"faces": {
+				"north": {"uv": [0, 0, 7, 2], "texture": "#0"},
+				"east": {"uv": [7, 0, 9, 2], "texture": "#0"},
+				"south": {"uv": [0, 2, 7, 4], "texture": "#0"},
+				"west": {"uv": [7, 2, 9, 4], "texture": "#0"},
+				"up": {"uv": [7, 6, 0, 4], "texture": "#0"},
+				"down": {"uv": [7, 6, 0, 8], "texture": "#0"}
+			}
+		},
+		{
+			"from": [11.5, 7.25, 7.25],
+			"to": [12, 8.75, 8.75],
+			"rotation": {"angle": 0, "axis": "y", "origin": [14.25, 1, 8]},
+			"faces": {
+				"north": {"uv": [8, 8, 9, 10], "texture": "#0"},
+				"east": {"uv": [0, 8, 2, 10], "texture": "#0"},
+				"south": {"uv": [9, 0, 10, 2], "texture": "#0"},
+				"west": {"uv": [2, 8, 4, 10], "texture": "#0"},
+				"up": {"uv": [10, 4, 9, 2], "texture": "#0"},
+				"down": {"uv": [10, 4, 9, 6], "texture": "#0"}
+			}
+		}
+	],
+	"gui_light": "front",
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [1.75, -90, 0],
+			"translation": [-0.25, 0.5, 0]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [180, -90, 0],
+			"translation": [-0.25, 0.5, 0]
+		},
+		"firstperson_righthand": {
+			"rotation": [1.75, -90, 0],
+			"translation": [-0.25, 0.5, 0]
+		},
+		"firstperson_lefthand": {
+			"rotation": [180, -90, 0],
+			"translation": [-0.25, 0.5, 0]
+		},
+		"ground": {
+			"scale": [0.7, 0.7, 0.7]
+		},
+		"gui": {
+			"rotation": [-138, 58, 180],
+			"scale": [2.2, 2.2, 2.2]
+		},
+		"head": {
+			"rotation": [160, -76.75, 180],
+			"translation": [1, -5, -9.5],
+			"scale": [1.2, 1.2, 1.2]
+		},
+		"fixed": {
+			"rotation": [0, 0, -90],
+			"scale": [2, 2, 2]
+		}
+	}
+}

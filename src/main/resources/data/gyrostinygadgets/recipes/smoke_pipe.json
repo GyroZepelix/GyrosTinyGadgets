@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "Y #",
+    "X# "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "tag": "minecraft:planks"
+    },
+    "Y": {
+      "item": "gyrostinygadgets:dried_cactus"
+    }
+  },
+  "result": {
+    "item": "gyrostinygadgets:smoke_pipe"
+  }
+}

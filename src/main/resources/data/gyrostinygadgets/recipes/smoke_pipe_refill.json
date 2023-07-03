@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "gyrostinygadgets:smoke_pipe"
+    },
+    {
+      "item": "gyrostinygadgets:dried_cactus"
+    }
+  ],
+  "result": {
+    "item": "gyrostinygadgets:smoke_pipe"
+  }
+}
