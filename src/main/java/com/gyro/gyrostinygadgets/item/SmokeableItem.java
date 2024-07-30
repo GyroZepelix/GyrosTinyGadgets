@@ -22,6 +22,8 @@ import java.util.function.Function;
 
 import static net.minecraft.world.item.Items.FLINT_AND_STEEL;
 
+import net.minecraft.world.item.Item.Properties;
+
 public class SmokeableItem extends Item {
 
     private final Optional<Item> refillItem;
