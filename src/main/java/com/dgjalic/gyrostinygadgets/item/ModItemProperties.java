@@ -1,16 +1,12 @@
-package com.gyro.gyrostinygadgets.item;
+package com.dgjalic.gyrostinygadgets.item;
 
 import net.minecraft.client.renderer.item.ItemProperties;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.BundleItem;
-import net.minecraft.world.item.ElytraItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
 
 public class ModItemProperties {
     public static void addCustomItemProperties() {
-        addSmokeableItemProperties(ModItems.CIGAR.get());
-        addSmokeableItemProperties(ModItems.SMOKE_PIPE.get());
+        addSmokeableItemProperties(ItemRegistry.CIGAR.get());
+        addSmokeableItemProperties(ItemRegistry.SMOKE_PIPE.get());
     }
 
     private static void addSmokeableItemProperties(SmokeableItem item) {

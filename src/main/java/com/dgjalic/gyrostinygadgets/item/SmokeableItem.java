@@ -1,4 +1,4 @@
-package com.gyro.gyrostinygadgets.item;
+package com.dgjalic.gyrostinygadgets.item;
 
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.nbt.CompoundTag;
@@ -6,7 +6,6 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
@@ -22,7 +21,7 @@ import java.util.function.Function;
 
 import static net.minecraft.world.item.Items.FLINT_AND_STEEL;
 
-import net.minecraft.world.item.Item.Properties;
+import org.jetbrains.annotations.NotNull;
 
 public class SmokeableItem extends Item {
 
@@ -112,7 +111,7 @@ public class SmokeableItem extends Item {
     }
 
     @Override
-    public InteractionResult useOn(UseOnContext pContext) {
+    public @NotNull InteractionResult useOn(UseOnContext pContext) {
         BlockState clickedBlock = pContext.getLevel().getBlockState(pContext.getClickedPos());
         if (clickedBlock.is(Blocks.CAMPFIRE) && !isLit.apply(pContext.getItemInHand())) {
             pContext.getItemInHand().getOrCreateTag().putBoolean("isLit", true);

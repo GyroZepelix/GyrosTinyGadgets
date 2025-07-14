@@ -1,12 +1,11 @@
 {
-  "attributes":
-  {
-    "common":
-    {
-      "armor_negation":20.0,
-      "impact":1.5,
-      "max_strikes":2
-    }
-  },
-  "type":"axe"
+	"attributes":
+	{
+		"common":
+		{
+			"armor_negation":20.0,
+			"impact":1.3
+		}
+	},
+	"type":"epicfight:axe"
 }
