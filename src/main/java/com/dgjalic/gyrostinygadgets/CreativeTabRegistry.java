@@ -15,7 +15,7 @@ public class CreativeTabRegistry {
 
     public static final RegistryObject<CreativeModeTab> ARMORY_TAB = REGISTRY.register("tiny_gadgets_tab",
             () -> CreativeModeTab.builder()
-                    .icon(() -> new ItemStack(ItemRegistry.HAMMER.get()))
+                    .icon(() -> new ItemStack(ItemRegistry.IRON_HAMMER.get()))
                     .title(Component.translatable("creativetab.tiny_gadgets_tab"))
                     .displayItems((pParameters, pOutput) -> {
                         for (RegistryObject<Item> item: ItemRegistry.ITEMS.getEntries()) {

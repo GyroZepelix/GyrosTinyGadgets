@@ -1,6 +1,7 @@
 {
-  "item.gyrostinygadgets.small_hammer": "Small Hammer",
-  "item.gyrostinygadgets.hammer": "Hammer",
+  "item.gyrostinygadgets.small_iron_hammer": "Small Hammer",
+  "item.gyrostinygadgets.iron_hammer": "Hammer",
+  "item.gyrostinygadgets.wooden_hammer": "Mallet",
   "item.gyrostinygadgets.cigar": "Cigar",
   "item.gyrostinygadgets.smoke_pipe": "Smoke Pipe",
   "item.gyrostinygadgets.copper_wrench": "Copper Wrench",
