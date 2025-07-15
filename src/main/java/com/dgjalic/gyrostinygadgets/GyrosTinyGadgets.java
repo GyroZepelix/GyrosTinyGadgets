@@ -3,6 +3,7 @@ package com.dgjalic.gyrostinygadgets;
 import com.dgjalic.gyrostinygadgets.item.ModItemProperties;
 import com.dgjalic.gyrostinygadgets.item.ItemRegistry;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.event.ForgeEventFactory;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;

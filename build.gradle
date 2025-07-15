@@ -4,7 +4,7 @@ plugins {
     id 'maven-publish'
     id 'net.minecraftforge.gradle' version '[6.0,6.2)'
     id 'org.parchmentmc.librarian.forgegradle' version '1.+'
-//    id 'org.spongepowered.mixin' version '0.7.+'
+    id 'org.spongepowered.mixin' version '0.7.+'
 }
 
 version = mod_version
@@ -142,7 +142,7 @@ dependencies {
     // compileOnly fg.deobf("mezz.jei:jei-${mc_version}-common-api:${jei_version}")
     // compileOnly fg.deobf("mezz.jei:jei-${mc_version}-forge-api:${jei_version}")
     // runtimeOnly fg.deobf("mezz.jei:jei-${mc_version}-forge:${jei_version}")
-//    runtimeOnly fg.deobf("curse.maven:efm-405076:6664815")
+    runtimeOnly fg.deobf("curse.maven:efm-405076:6664815")
 //    annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 
     // Example mod dependency using a mod jar from ./libs with a flat dir repository
