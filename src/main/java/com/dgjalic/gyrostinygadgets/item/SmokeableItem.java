@@ -2,6 +2,7 @@ package com.dgjalic.gyrostinygadgets.item;
 
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.InteractionResultHolder;
@@ -21,6 +22,7 @@ import java.util.function.Function;
 
 import static net.minecraft.world.item.Items.FLINT_AND_STEEL;
 
+import net.minecraft.world.phys.Vec3;
 import org.jetbrains.annotations.NotNull;
 
 public class SmokeableItem extends Item {
@@ -73,8 +75,6 @@ public class SmokeableItem extends Item {
 
         final boolean hasFlintAndSteel = lighterItemStack.getItem() == FLINT_AND_STEEL;
 
-
-
         if ( !isLit.apply(smokeableItemStack) && hasFlintAndSteel && !pLevel.isClientSide ) {
             tags.putBoolean("isLit", true);
             lighterItemStack.hurtAndBreak(1, pPlayer, (player -> player.broadcastBreakEvent(otherHand)));
@@ -90,8 +90,12 @@ public class SmokeableItem extends Item {
 
 
     @Override
-    public void releaseUsing(ItemStack pStack, Level pLevel, LivingEntity pLivingEntity, int pTimeCharged) {
-        pLevel.addParticle(ParticleTypes.CAMPFIRE_COSY_SMOKE, pLivingEntity.getX(), pLivingEntity.getY()+2, pLivingEntity.getZ(), 0.0D, 0.02D, 0.0D);
+    public void releaseUsing(@NotNull ItemStack pStack, @NotNull Level pLevel, @NotNull LivingEntity pLivingEntity, int pTimeCharged) {
+        Vec3 facingVector = pLivingEntity.getViewVector(1);
+        double x = pLivingEntity.getX() + facingVector.x * .5;
+        double y = pLivingEntity.getY() + 1.5;
+        double z = pLivingEntity.getZ() + facingVector.z * .5;
+        pLevel.addParticle(ParticleTypes.CAMPFIRE_COSY_SMOKE, x, y, z, 0.0D, 0.02D, 0.0D);
     }
 
     @Override

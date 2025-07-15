@@ -10,10 +10,10 @@ public class ModItemProperties {
     }
 
     private static void addSmokeableItemProperties(SmokeableItem item) {
-        ItemProperties.register(item, new ResourceLocation("using_lit"), (itemStack, clientLevel, livingEntity, p_174603_) -> {
+        ItemProperties.register(item, ResourceLocation.parse("using_lit"), (itemStack, clientLevel, livingEntity, p_174603_) -> {
             return livingEntity != null && livingEntity.isUsingItem() && livingEntity.getUseItem() == itemStack ? 1.0F : 0.0F;
         });
-        ItemProperties.register(item, new ResourceLocation("lit"), (itemStack, clientLevel, livingEntity, p_174603_) -> {
+        ItemProperties.register(item, ResourceLocation.parse("lit"), (itemStack, clientLevel, livingEntity, p_174603_) -> {
             return SmokeableItem.isLit.apply(itemStack) ? 1.0F : 0.0F;
         });
     }
