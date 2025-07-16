@@ -33,17 +33,17 @@ else
   echo "Error: Failed to update mod_version in $GRADLE_PROPERTIES."
   exit 1
 fi
-
-echo "Running ./gradlew build..."
-
-# Execute the Gradle build command
-./gradlew build
-
-# Check the exit status of the Gradle build
-if [ $? -eq 0 ]; then
-  echo "Gradle build completed successfully."
-  exit 0
-else
-  echo "Error: Gradle build failed."
-  exit 1
-fi
+# Disabled autobuild to save on Github Action minutes
+#echo "Running ./gradlew build..."
+#
+## Execute the Gradle build command
+#./gradlew build
+#
+## Check the exit status of the Gradle build
+#if [ $? -eq 0 ]; then
+#  echo "Gradle build completed successfully."
+#  exit 0
+#else
+#  echo "Error: Gradle build failed."
+#  exit 1
+#fi
