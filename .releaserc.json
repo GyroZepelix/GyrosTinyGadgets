@@ -5,10 +5,22 @@
     "@semantic-release/release-notes-generator",
     "@semantic-release/changelog",
     [
+      "@semantic-release/exec",
+      {
+        "prepareCmd": "./ci/update-version-and-build.sh 1.20.1-${nextRelease.version}"
+      }
+    ],
+    [
       "@semantic-release/git", {
         "message": "chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}"
       }
     ],
-    "@semantic-release/github"
+    [
+      "@semantic-release/github", {
+        "assets": [
+          { "path": "build/libs/gyrostinygadgets-1.20.1-${nextRelease.version}.jar", "label": "Gyro Tiny Gadgets Mod" }
+        ]
+      }
+    ]
   ]
 }

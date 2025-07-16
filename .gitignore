@@ -20,7 +20,7 @@ build
 # other
 eclipse
 run
-run-data
+run-datkocio
 src/generated/resources/.cache
 
 # Files from Forge MDK
