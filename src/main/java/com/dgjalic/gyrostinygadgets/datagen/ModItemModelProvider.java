@@ -1,6 +1,7 @@
 package com.dgjalic.gyrostinygadgets.datagen;
 
 import com.dgjalic.gyrostinygadgets.GyrosTinyGadgets;
+import com.dgjalic.gyrostinygadgets.item.ItemRegistry;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
@@ -16,6 +17,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
+        simpleItem(ItemRegistry.DRIED_CACTUS);
     }
 
     private <T extends Item> ItemModelBuilder simpleItem(RegistryObject<T> item) {

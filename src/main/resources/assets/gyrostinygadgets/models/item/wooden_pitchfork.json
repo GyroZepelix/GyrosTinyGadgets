@@ -1,0 +1,44 @@
+{
+  "loader": "forge:separate_transforms",
+  "gui_light": "front",
+  "base": {
+    "parent": "gyrostinygadgets:item/pitchfork",
+    "textures": {
+      "layer0": "gyrostinygadgets:item/wooden_pitchfork"
+    }
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "gyrostinygadgets:item/pitchfork",
+      "textures": {
+        "layer0": "gyrostinygadgets:item/wooden_pitchfork_gui"
+      },
+      "display": {
+        "gui": {
+          "rotation": [0, 0, 0],
+          "translation": [0, 0, 0],
+          "scale": [1.0, 1.0, 1.0]
+        }
+      }
+    },
+    "fixed": {
+      "parent": "gyrostinygadgets:item/pitchfork",
+      "textures": {
+        "layer0": "gyrostinygadgets:item/wooden_pitchfork"
+      }
+    },
+    "ground": {
+      "parent": "gyrostinygadgets:item/pitchfork",
+      "textures": {
+        "layer0": "gyrostinygadgets:item/wooden_pitchfork"
+      },
+      "display": {
+        "ground": {
+          "rotation": [0, 0, 0],
+          "translation": [0, 8, 0],
+          "scale": [1.5, 1.5, 1.0]
+        }
+      }
+    }
+  }
+}

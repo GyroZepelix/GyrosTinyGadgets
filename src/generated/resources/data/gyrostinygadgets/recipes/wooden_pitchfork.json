@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "N": {
+      "item": "minecraft:stick"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "X": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    " NX",
+    " SN",
+    "S  "
+  ],
+  "result": {
+    "item": "gyrostinygadgets:wooden_pitchfork"
+  },
+  "show_notification": true
+}

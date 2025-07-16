@@ -1,6 +1,7 @@
 package com.dgjalic.gyrostinygadgets.item;
 
 
+import com.dgjalic.gyrostinygadgets.config.ModCommonConfigs;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -19,6 +20,9 @@ public class ItemRegistry {
     public static final RegistryObject<PickaxeItem> SMALL_IRON_HAMMER = ITEMS.register("small_iron_hammer", () -> new PickaxeItem(Tiers.IRON, 3, -2.4F, new Item.Properties()));
     public static final RegistryObject<PickaxeItem> IRON_HAMMER = ITEMS.register("iron_hammer", () -> new PickaxeItem(Tiers.IRON, 6, -3.1F, new Item.Properties()));
     public static final RegistryObject<PickaxeItem> WOODEN_HAMMER = ITEMS.register("wooden_hammer", () -> new PickaxeItem(Tiers.WOOD, 6, -3.2F, new Item.Properties()));
+
+    public static final RegistryObject<PitchforkItem> WOODEN_PITCHFORK = ITEMS.register("wooden_pitchfork", () -> new PitchforkItem(Tiers.WOOD, 2f, -2.8f, new Item.Properties()));
+    public static final RegistryObject<PitchforkItem> IRON_PITCHFORK = ITEMS.register("iron_pitchfork", () -> new PitchforkItem(Tiers.IRON, 2f, -2.8f, new Item.Properties()));
 
     public static final RegistryObject<SmokeableItem> CIGAR = ITEMS.register("cigar", () -> new SmokeableItem(new Item.Properties().defaultDurability(1200), Optional.empty()));
 
